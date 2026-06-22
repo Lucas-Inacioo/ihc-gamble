@@ -1,0 +1,18 @@
+{
+  "name": "probabilidade-em-jogo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Aplicação web de probabilidade com créditos fictícios, pronta para um único Web Service no Render.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

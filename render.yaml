@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: probabilidade-em-jogo
+    runtime: node
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 20.19.0
+      - key: INITIAL_CREDITS
+        value: "1000"
+      - key: CRASH_HOUSE_EDGE
+        value: "0.04"
+      - key: MINES_HOUSE_EDGE
+        value: "0.03"
+      - key: DOUBLE_PAYOUT_COLOR
+        value: "2"
+      - key: DOUBLE_PAYOUT_GREEN
+        value: "14"

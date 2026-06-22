@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Exploração interativa de probabilidade, retorno esperado e jogos com créditos fictícios."
+    />
+    <title>Probabilidade em Jogo</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="notice-bar">
+      Todos os valores são créditos fictícios. Não há pagamentos, depósitos, saques ou conversão em dinheiro real.
+    </div>
+
+    <div class="app-layout">
+      <aside class="sidebar">
+        <a class="brand" href="#inicio" data-nav="inicio" aria-label="Ir para a página inicial">
+          <span class="brand-mark">∑</span>
+          <span>
+            <strong>Probabilidade</strong>
+            <small>em jogo</small>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Seções">
+          <button type="button" data-nav="inicio" class="nav-button">Início</button>
+          <button type="button" data-nav="double" class="nav-button">Double</button>
+          <button type="button" data-nav="mines" class="nav-button">Mines</button>
+          <button type="button" data-nav="crash" class="nav-button">Crash</button>
+          <button type="button" data-nav="conceitos" class="nav-button">Conceitos</button>
+        </nav>
+
+        <section class="sidebar-foot">
+          <p>Escolha uma seção, faça algumas rodadas e compare o que aconteceu com as probabilidades mostradas.</p>
+        </section>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">CRÉDITOS FICTÍCIOS</p>
+            <h1 id="page-title">Probabilidade em Jogo</h1>
+          </div>
+          <div class="wallet">
+            <span>Saldo</span>
+            <strong id="wallet-balance">C$ 0,00</strong>
+            <button type="button" class="link-button" data-action="reset-wallet">Reiniciar saldo</button>
+          </div>
+        </header>
+
+        <div id="flash-message" class="flash-message" hidden></div>
+        <section id="app"></section>
+      </main>
+    </div>
+
+    <noscript>Este site precisa de JavaScript para executar os jogos.</noscript>
+    <script src="/app.js" defer></script>
+  </body>
+</html>
